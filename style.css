@@ -4,10 +4,10 @@
    ╚═══════════════════════════════════════════════════╝ */
 
 :root {
-  --ot-navy: #1E3A8A;
+  --ot-navy: #003399;
   --ot-navy-light: #5B75D9;
-  --ot-navy-mid: #142058;
-  --ot-navy-deep: #0D1640;
+  --ot-navy-mid: #002280;
+  --ot-navy-deep: #001166;
   --ot-navy-darker: #080E2A;
   --ot-gold: #F5C518;
   --ot-gold-light: #FFD94A;
@@ -22,12 +22,16 @@
   --ot-rule: #38C97A;
   --ot-agent: #9B6DFF;
   --ot-warn: #F0963A;
-  --ot-glass: rgba(13,22,64,0.65);
+  --ot-glass: rgba(0,26,77,0.65);
   --ot-glass-border: rgba(245,197,24,0.12);
   --ot-ease: cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 /* ── Global background ── */
+html, body {
+  background: var(--ot-navy-darker) !important;
+}
+
 .slidev-layout {
   background: var(--ot-navy-darker) !important;
   color: var(--ot-gray-100);

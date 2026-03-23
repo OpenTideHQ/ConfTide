@@ -48,7 +48,34 @@ class: text-center
 
 ## The Detection Engineering <span class="text-threat">Bottleneck</span>
 
-<BottleneckDiagram />
+<div class="flex items-stretch gap-0 mt-6 mx-auto rounded-2xl overflow-hidden border border-white/10 text-sm">
+  <div class="flex-1 bg-[rgba(224,82,101,0.18)] border-r border-[rgba(224,82,101,0.35)] p-4">
+    <div class="text-threat font-black text-xs uppercase tracking-widest mb-3">Intelligence Feed</div>
+    <ul class="text-xs space-y-1.5 text-white/80 list-none !pl-0">
+      <li>☣️ CVE advisories</li>
+      <li>☣️ Vendor bulletins</li>
+      <li>☣️ APT campaigns</li>
+      <li>☣️ OSINT / ISAC feeds</li>
+      <li>☣️ Threat intel reports</li>
+    </ul>
+    <div class="text-threat font-semibold mt-3 text-xs">1,000s per month</div>
+  </div>
+  <div class="w-36 bg-[rgba(240,150,58,0.22)] border-r border-[rgba(240,150,58,0.40)] flex flex-col items-center justify-center p-3 text-center shrink-0">
+    <div class="text-warn font-black text-xs uppercase tracking-widest mb-2">Bottleneck</div>
+    <div class="text-3xl my-2">⧗</div>
+    <div class="text-warn/70 text-[10px]">Manual CTI analysis<br/>Hours per TTP</div>
+  </div>
+  <div class="flex-1 bg-[rgba(56,201,122,0.18)] p-4">
+    <div class="text-rule font-black text-xs uppercase tracking-widest mb-3">Detection Rules</div>
+    <ul class="text-xs space-y-1.5 text-white/80 list-none !pl-0">
+      <li>🚨 Sigma / KQL</li>
+      <li>🚨 SPL (Splunk)</li>
+      <li>🚨 YARA rules</li>
+    </ul>
+    <div class="text-rule font-semibold mt-3 text-xs">Tens per month</div>
+    <div class="text-[10px] text-white/40 mt-1">Deployed to SIEM/EDR</div>
+  </div>
+</div>
 
 <v-click>
 

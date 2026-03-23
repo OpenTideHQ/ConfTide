@@ -60,7 +60,46 @@ class: text-center
 
 ## Agen<span class="text-agent">Tide</span> Architecture
 
-<AgentArchitecture />
+<div class="grid grid-cols-3 gap-6 mt-6 items-center">
+  <div class="space-y-2">
+    <div class="text-center text-[10px] font-bold text-white/40 uppercase tracking-widest mb-3">Inputs</div>
+    <div class="glass-card threat !p-2.5 text-center">
+      <div class="text-threat font-bold text-xs">📰 Intel Report</div>
+      <div class="text-[10px] text-white/50 mt-0.5">Raw threat intelligence</div>
+    </div>
+    <div class="glass-card !p-2.5 text-center">
+      <div class="text-gold font-bold text-xs">📝 AGENTS.md</div>
+      <div class="text-[10px] text-white/50 mt-0.5">Prime directives</div>
+    </div>
+    <div class="glass-card !p-2.5 text-center">
+      <div class="text-white/80 font-bold text-xs">📌 JSON Schemas</div>
+      <div class="text-[10px] text-white/50 mt-0.5">6.3MB validation rules</div>
+    </div>
+  </div>
+  <div class="flex items-center justify-center">
+    <div class="glass-card agent !p-5 text-center border-2 border-[var(--ot-agent)]">
+      <div class="text-3xl mb-2">🤖</div>
+      <div class="text-agent font-black text-sm">Agen<span class="text-white">Tide</span></div>
+      <div class="text-[10px] text-white/50 mt-2">Copilot Coding Agent</div>
+    </div>
+  </div>
+  <div class="space-y-2">
+    <div class="text-center text-[10px] font-bold text-white/40 uppercase tracking-widest mb-3">Outputs</div>
+    <div class="glass-card threat !p-2.5 text-center">
+      <div class="text-threat font-bold text-xs">☣️ TVMs (YAML)</div>
+    </div>
+    <div class="glass-card detect !p-2.5 text-center">
+      <div class="text-detect font-bold text-xs">🎯 DOMs (YAML)</div>
+    </div>
+    <div class="glass-card rule !p-2.5 text-center">
+      <div class="text-rule font-bold text-xs">🚨 MDRs (KQL/SPL)</div>
+    </div>
+    <div class="glass-card !p-2.5 text-center">
+      <div class="text-gold font-bold text-xs">🔀 Pull Request</div>
+      <div class="text-[10px] text-white/50 mt-0.5">Human review + CI</div>
+    </div>
+  </div>
+</div>
 
 ---
 layout: two-cols
@@ -363,21 +402,21 @@ layout: two-cols
 
 <p class="text-xs text-[var(--ot-gray-400)] mb-3">The secret: structured frameworks make AI reliable</p>
 
-<div class="pr-4 space-y-3">
+<div class="pr-4 space-y-2">
 
-<div class="glass-card agent">
-  <h3 class="!text-sm !text-agent">Schema Constraints</h3>
-  <p class="text-xs">6.3MB JSON Schemas act as structured "knowledge" — the agent reads them at runtime to understand every field, enumeration, and validation rule. <strong>No hallucinated fields can pass validation.</strong></p>
+<div class="glass-card agent !p-3">
+  <h3 class="!text-sm !text-agent !mb-1">Schema Constraints</h3>
+  <p class="text-xs !m-0">6.3MB JSON Schemas act as structured "knowledge" — the agent reads them at runtime to understand every field, enumeration, and validation rule. <strong>No hallucinated fields can pass validation.</strong></p>
 </div>
 
-<div class="glass-card agent">
-  <h3 class="!text-sm !text-agent">Top-Down Workflow</h3>
-  <p class="text-xs">AGENTS.md enforces Intelligence → TVM → DOM → MDR ordering. The agent cannot skip steps or create rules without threat models.</p>
+<div class="glass-card agent !p-3">
+  <h3 class="!text-sm !text-agent !mb-1">Top-Down Workflow</h3>
+  <p class="text-xs !m-0">AGENTS.md enforces Intelligence → TVM → DOM → MDR ordering. The agent cannot skip steps or create rules without threat models.</p>
 </div>
 
-<div class="glass-card agent">
-  <h3 class="!text-sm !text-agent">Git as Safety Net</h3>
-  <p class="text-xs">Every agent output is a PR — human reviewable, CI-validated, revertible. <strong>No direct deployment without review.</strong></p>
+<div class="glass-card agent !p-3">
+  <h3 class="!text-sm !text-agent !mb-1">Git as Safety Net</h3>
+  <p class="text-xs !m-0">Every agent output is a PR — human reviewable, CI-validated, revertible. <strong>No direct deployment without review.</strong></p>
 </div>
 
 </div>
@@ -388,7 +427,35 @@ layout: two-cols
 
 <div class="pl-4">
 
-<TrustTriangle />
+<div class="space-y-3">
+  <div class="glass-card agent !p-3">
+    <div class="flex items-center gap-3">
+      <span class="text-xl">🔍</span>
+      <div>
+        <div class="text-agent font-bold text-sm">Transparency</div>
+        <div class="text-xs text-white/60 mt-0.5">All decisions logged and discoverable in PR descriptions</div>
+      </div>
+    </div>
+  </div>
+  <div class="glass-card agent !p-3">
+    <div class="flex items-center gap-3">
+      <span class="text-xl">🛡️</span>
+      <div>
+        <div class="text-agent font-bold text-sm">Guardrails</div>
+        <div class="text-xs text-white/60 mt-0.5">NEVER/ENFORCE directives, schema validation at every step</div>
+      </div>
+    </div>
+  </div>
+  <div class="glass-card agent !p-3">
+    <div class="flex items-center gap-3">
+      <span class="text-xl">📋</span>
+      <div>
+        <div class="text-agent font-bold text-sm">Traceability</div>
+        <div class="text-xs text-white/60 mt-0.5">Git PR trail — every change human-reviewable and revertible</div>
+      </div>
+    </div>
+  </div>
+</div>
 
 </div>
 

@@ -1,5 +1,6 @@
 ---
 theme: default
+layout: default
 title: "OpenTide — FIRST CTI 2026"
 info: |
   ## OpenTide: Open Threat-Informed Detection Engineering

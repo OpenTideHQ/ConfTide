@@ -48,9 +48,39 @@ class: text-center
 
 ## The <span class="text-gold">Tide</span> Ecosystem
 
-<EcosystemMap />
+<div class="flex items-center justify-center gap-5 mt-5">
+  <div class="flex flex-col gap-3">
+    <div class="glass-card detect !p-3 text-center min-w-28">
+      <div class="text-detect font-bold text-sm">TideKit</div>
+      <div class="text-[11px] text-white/60 mt-0.5">Python SDK</div>
+    </div>
+    <div class="glass-card !p-3 text-center min-w-28">
+      <div class="text-white/80 font-bold text-sm">WikiTide</div>
+      <div class="text-[11px] text-white/60 mt-0.5">Documentation</div>
+    </div>
+  </div>
+  <div class="glass-card !p-5 text-center border-2 border-[var(--ot-gold)] min-w-40">
+    <img src="/opentide-logo.png" class="w-12 mx-auto mb-2" />
+    <div class="text-gold font-black text-base">OpenTide</div>
+    <div class="text-[11px] text-white/50 mt-1">EUPL 1.2 · CC-BY-SA 4.0</div>
+  </div>
+  <div class="flex flex-col gap-3">
+    <div class="glass-card rule !p-3 text-center min-w-28">
+      <div class="text-rule font-bold text-sm">ShareTide</div>
+      <div class="text-[11px] text-white/60 mt-0.5">Community content</div>
+    </div>
+    <div class="glass-card !p-3 text-center min-w-28">
+      <div class="text-white/80 font-bold text-sm">SyntaxTide</div>
+      <div class="text-[11px] text-white/60 mt-0.5">JSON Schemas</div>
+    </div>
+    <div class="glass-card agent !p-3 text-center min-w-28">
+      <div class="text-agent font-bold text-sm">AgenTide</div>
+      <div class="text-[11px] text-white/60 mt-0.5">AI Agents</div>
+    </div>
+  </div>
+</div>
 
-<p class="text-xs text-center text-[var(--ot-gray-400)] mt-2">Licensed under <strong>EUPL 1.2</strong> (framework) · <strong>CC-BY-SA 4.0</strong> (content) · GitHub, Azure DevOps, GitLab</p>
+<p class="text-xs text-center text-[var(--ot-gray-400)] mt-3">GitHub · Azure DevOps · GitLab</p>
 
 ---
 
@@ -123,7 +153,20 @@ class: text-center
 
 ## Intelligence → Detection <span class="text-gold">Pipeline</span>
 
-<PipelineFlow />
+<div class="pipeline-flow mt-8">
+  <div class="pipeline-stage active">📰 Intel</div>
+  <div class="pipeline-stage">☣️ TVM</div>
+  <div class="pipeline-stage">🎯 DOM</div>
+  <div class="pipeline-stage">🚨 MDR</div>
+  <div class="pipeline-stage active">🚀 Deploy</div>
+</div>
+<div class="grid grid-cols-5 gap-0 mt-3 text-[10px] text-center text-white/40">
+  <div>Reports · CVEs<br/>Advisories</div>
+  <div>Threat Vectors<br/>(YAML)</div>
+  <div>Detection<br/>Objectives</div>
+  <div>KQL · SPL<br/>Sigma</div>
+  <div>Sentinel · Splunk<br/>CrowdStrike…</div>
+</div>
 
 ---
 layout: two-cols
@@ -230,7 +273,26 @@ objective:
 
 Each **Signal** is an atomic detection opportunity — the building block for rules.
 
-<DetectionSignals />
+<div class="mt-3 space-y-2">
+  <div class="glass-card detect !p-2.5 text-center">
+    <div class="text-detect font-bold text-xs">🎯 Detection Objective</div>
+    <div class="text-[10px] text-white/50 mt-0.5">NSIS Side-Loading DOM</div>
+  </div>
+  <div class="grid grid-cols-3 gap-2">
+    <div class="glass-card !p-2 text-center">
+      <div class="text-gold font-bold text-[10px]">Signal 1</div>
+      <div class="text-[9px] text-white/60 mt-0.5">Process<br/>Monitoring</div>
+    </div>
+    <div class="glass-card !p-2 text-center">
+      <div class="text-gold font-bold text-[10px]">Signal 2</div>
+      <div class="text-[9px] text-white/60 mt-0.5">Network<br/>Monitoring</div>
+    </div>
+    <div class="glass-card !p-2 text-center">
+      <div class="text-gold font-bold text-[10px]">Signal 3</div>
+      <div class="text-[9px] text-white/60 mt-0.5">File<br/>Activity</div>
+    </div>
+  </div>
+</div>
 
 <p class="text-xs text-center text-[var(--ot-gray-400)] mt-2">Signals define <em>what</em> to look for, with data requirements, methodology, and entity scoping.</p>
 

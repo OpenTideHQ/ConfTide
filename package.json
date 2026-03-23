@@ -1,0 +1,16 @@
+{
+  "name": "conftide",
+  "version": "1.0.0",
+  "private": true,
+  "description": "OpenTide conference presentations — powered by Slidev",
+  "scripts": {
+    "dev": "slidev talks/first-cti-2026/slides.md --open",
+    "build": "bash scripts/build.sh",
+    "build:first-cti-2026": "slidev build talks/first-cti-2026/slides.md --out dist/first-cti-2026 --base /ConfTide/first-cti-2026/",
+    "export:pdf": "slidev export talks/first-cti-2026/slides.md --output exports/first-cti-2026.pdf"
+  },
+  "dependencies": {
+    "@slidev/cli": "^51.0.0",
+    "@slidev/theme-default": "latest"
+  }
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ConfTide — OpenTide Presentations</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      background: #080E2A;
+      color: #E0E4F0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 4rem 1.5rem;
+    }
+    h1 { font-size: 2.2rem; margin-bottom: 0.3rem; }
+    h1 .gold { color: #F5C518; }
+    .subtitle { color: #7E8BB0; font-size: 0.95rem; margin-bottom: 3rem; }
+    .talks { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem; max-width: 900px; width: 100%; }
+    .talk-card {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(245,197,24,0.12);
+      border-radius: 16px;
+      padding: 1.8rem;
+      transition: border-color 0.2s, transform 0.2s;
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+    .talk-card:hover { border-color: rgba(245,197,24,0.45); transform: translateY(-3px); }
+    .talk-card h2 { font-size: 1.2rem; margin-bottom: 0.4rem; }
+    .talk-card .meta { font-size: 0.8rem; color: #7E8BB0; }
+    .talk-card .badge { display: inline-block; padding: 0.15em 0.6em; border-radius: 99px; font-size: 0.7rem; font-weight: 600; background: rgba(245,197,24,0.12); color: #F5C518; margin-top: 0.8rem; }
+    footer { margin-top: 4rem; font-size: 0.75rem; color: #4A5580; }
+    footer a { color: #F5C518; text-decoration: none; }
+  </style>
+</head>
+<body>
+  <h1><span class="gold">Conf</span>Tide</h1>
+  <p class="subtitle">OpenTide community presentations</p>
+
+  <div class="talks">
+    <a class="talk-card" href="first-cti-2026/">
+      <h2>OpenTide — FIRST CTI 2026</h2>
+      <p>Bridging Threat Intelligence &amp; Detection Engineering with OpenTide and AgenTide.</p>
+      <p class="meta" style="margin-top:0.6rem;">Amine Besson &amp; Rémi Séguy · European Commission CSOC</p>
+      <span class="badge">FIRST CTI 2026</span>
+    </a>
+  </div>
+
+  <footer>
+    <a href="https://github.com/OpenTideHQ">github.com/OpenTideHQ</a> · EUPL 1.2
+  </footer>
+</body>
+</html>

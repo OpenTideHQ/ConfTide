@@ -3,16 +3,16 @@
     <svg :viewBox="`0 0 ${W} ${H}`" class="bottleneck-svg">
       <defs>
         <linearGradient id="bn-red" x1="0" y1="0" x2="1" y2="0">
-          <stop offset="0%" stop-color="rgba(224,82,101,0.22)" />
-          <stop offset="100%" stop-color="rgba(224,82,101,0.06)" />
+          <stop offset="0%" stop-color="rgba(224,82,101,0.38)" />
+          <stop offset="100%" stop-color="rgba(224,82,101,0.12)" />
         </linearGradient>
         <linearGradient id="bn-green" x1="0" y1="0" x2="1" y2="0">
-          <stop offset="0%" stop-color="rgba(56,201,122,0.06)" />
-          <stop offset="100%" stop-color="rgba(56,201,122,0.18)" />
+          <stop offset="0%" stop-color="rgba(56,201,122,0.12)" />
+          <stop offset="100%" stop-color="rgba(56,201,122,0.32)" />
         </linearGradient>
         <linearGradient id="bn-amber" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%" stop-color="rgba(240,150,58,0.15)" />
-          <stop offset="100%" stop-color="rgba(240,150,58,0.04)" />
+          <stop offset="0%" stop-color="rgba(240,150,58,0.28)" />
+          <stop offset="100%" stop-color="rgba(240,150,58,0.10)" />
         </linearGradient>
         <filter id="bn-glow-red">
           <feGaussianBlur stdDeviation="5" result="b" />
@@ -26,7 +26,7 @@
 
       <!-- INPUT ZONE: wide block of intelligence sources -->
       <g :opacity="visible ? 1 : 0" :style="tIn(0)">
-        <rect x="20" y="30" width="220" height="240" rx="16" fill="url(#bn-red)" stroke="rgba(224,82,101,0.28)" stroke-width="1.5" />
+        <rect x="20" y="30" width="220" height="240" rx="16" fill="url(#bn-red)" stroke="rgba(224,82,101,0.45)" stroke-width="1.5" />
         <text x="130" y="60" text-anchor="middle" fill="#E05265" font-weight="800" font-size="14" font-family="'Inter',sans-serif">INTELLIGENCE</text>
         <!-- Source items with staggered entrance -->
         <g v-for="(src, i) in sources" :key="i" :opacity="visible ? 1 : 0" :style="tIn(0.3 + i * 0.08)">
@@ -39,7 +39,7 @@
 
       <!-- FUNNEL: the narrowing bottleneck -->
       <g :opacity="visible ? 1 : 0" :style="tIn(0.6)">
-        <polygon :points="funnelPoints" fill="url(#bn-amber)" stroke="rgba(240,150,58,0.30)" stroke-width="1.5" />
+        <polygon :points="funnelPoints" fill="url(#bn-amber)" stroke="rgba(240,150,58,0.50)" stroke-width="1.5" />
         <text x="350" y="138" text-anchor="middle" fill="#F0963A" font-weight="700" font-size="13" font-family="'Inter',sans-serif">MANUAL</text>
         <text x="350" y="155" text-anchor="middle" fill="#F0963A" font-weight="700" font-size="13" font-family="'Inter',sans-serif">ANALYSIS</text>
         <text x="350" y="178" text-anchor="middle" fill="#7E8BB0" font-size="10" font-family="'Inter',sans-serif">🧑‍💻 × limited</text>
@@ -64,19 +64,19 @@
 
       <!-- OUTPUT ZONE: small detection results -->
       <g :opacity="visible ? 1 : 0" :style="tIn(1)">
-        <rect x="485" y="112" width="165" height="76" rx="16" fill="url(#bn-green)" stroke="rgba(56,201,122,0.30)" stroke-width="1.5" />
+        <rect x="485" y="112" width="165" height="76" rx="16" fill="url(#bn-green)" stroke="rgba(56,201,122,0.45)" stroke-width="1.5" />
         <text x="567" y="145" text-anchor="middle" fill="#38C97A" font-weight="800" font-size="14" font-family="'Inter',sans-serif">DETECTIONS</text>
         <text x="567" y="168" text-anchor="middle" fill="#7E8BB0" font-size="11" font-family="'Inter',sans-serif">A handful per sprint</text>
       </g>
 
       <!-- GAP callouts -->
       <g filter="url(#bn-glow-red)" :opacity="visible ? 1 : 0" :style="tIn(1.3)">
-        <rect x="680" y="50" width="120" height="55" rx="12" fill="rgba(224,82,101,0.10)" stroke="rgba(224,82,101,0.40)" stroke-width="1.5" stroke-dasharray="5 3" />
+        <rect x="680" y="50" width="120" height="55" rx="12" fill="rgba(224,82,101,0.18)" stroke="rgba(224,82,101,0.50)" stroke-width="1.5" stroke-dasharray="5 3" />
         <text x="740" y="75" text-anchor="middle" fill="#E05265" font-weight="800" font-size="12" font-family="'Inter',sans-serif">COVERAGE</text>
         <text x="740" y="92" text-anchor="middle" fill="#E05265" font-weight="800" font-size="12" font-family="'Inter',sans-serif">GAP</text>
       </g>
       <g filter="url(#bn-glow-red)" :opacity="visible ? 1 : 0" :style="tIn(1.5)">
-        <rect x="680" y="130" width="120" height="55" rx="12" fill="rgba(224,82,101,0.10)" stroke="rgba(224,82,101,0.40)" stroke-width="1.5" stroke-dasharray="5 3" />
+        <rect x="680" y="130" width="120" height="55" rx="12" fill="rgba(224,82,101,0.18)" stroke="rgba(224,82,101,0.50)" stroke-width="1.5" stroke-dasharray="5 3" />
         <text x="740" y="155" text-anchor="middle" fill="#E05265" font-weight="800" font-size="12" font-family="'Inter',sans-serif">SPEED</text>
         <text x="740" y="172" text-anchor="middle" fill="#E05265" font-weight="800" font-size="12" font-family="'Inter',sans-serif">GAP</text>
       </g>
@@ -115,12 +115,12 @@ const sources = [
 ]
 
 const particles = [
-  { id: 1, path: 'flow-top', r: 3, color: '#E05265', opacity: 0.6, dur: '4s', begin: '0s' },
-  { id: 2, path: 'flow-mid', r: 2.5, color: '#F0963A', opacity: 0.5, dur: '3.5s', begin: '0.8s' },
-  { id: 3, path: 'flow-bot', r: 3, color: '#F5C518', opacity: 0.6, dur: '4.5s', begin: '1.5s' },
-  { id: 4, path: 'flow-top', r: 2, color: '#5B75D9', opacity: 0.4, dur: '5s', begin: '2s' },
-  { id: 5, path: 'flow-mid', r: 2.5, color: '#E05265', opacity: 0.5, dur: '3.8s', begin: '2.5s' },
-  { id: 6, path: 'flow-bot', r: 2, color: '#F0963A', opacity: 0.4, dur: '4.2s', begin: '3s' },
+  { id: 1, path: 'flow-top', r: 3.5, color: '#E05265', opacity: 0.8, dur: '4s', begin: '0s' },
+  { id: 2, path: 'flow-mid', r: 3, color: '#F0963A', opacity: 0.7, dur: '3.5s', begin: '0.8s' },
+  { id: 3, path: 'flow-bot', r: 3.5, color: '#F5C518', opacity: 0.8, dur: '4.5s', begin: '1.5s' },
+  { id: 4, path: 'flow-top', r: 2.5, color: '#5B75D9', opacity: 0.6, dur: '5s', begin: '2s' },
+  { id: 5, path: 'flow-mid', r: 3, color: '#E05265', opacity: 0.7, dur: '3.8s', begin: '2.5s' },
+  { id: 6, path: 'flow-bot', r: 2.5, color: '#F0963A', opacity: 0.6, dur: '4.2s', begin: '3s' },
 ]
 </script>
 

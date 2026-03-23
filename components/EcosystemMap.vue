@@ -55,7 +55,7 @@
         :stroke="ring.color"
         stroke-width="0.8"
         :stroke-dasharray="ring.dash"
-        :opacity="visible ? 0.12 : 0"
+        :opacity="visible ? 0.30 : 0"
         :style="{ transition: `opacity 1s ${i * 0.3}s` }"
       />
 
@@ -149,11 +149,11 @@ const orbitRings = [
 
 const nodes = [
   { id: 'core', label: 'CoreTide', sub: 'Engine · Schemas · CI/CD', icon: '⚙️', x: center.x, y: center.y, w: 200, h: 80, size: 50, isCore: true, bg: 'rgba(245,197,24,0.10)', border: '#F5C518', labelColor: '#F5C518', glow: 'rgba(245,197,24,0.06)' },
-  { id: 'init', label: 'InitTide', sub: 'Template Bootstrap', icon: '🚀', x: 130, y: 175, w: 160, h: 60, size: 30, isCore: false, bg: 'rgba(91,117,217,0.06)', border: 'rgba(91,117,217,0.35)', labelColor: '#5B75D9', glow: 'rgba(91,117,217,0.04)' },
-  { id: 'share', label: 'ShareTide', sub: 'TLP:CLEAR Community', icon: '🤝', x: center.x, y: 290, w: 170, h: 60, size: 30, isCore: false, bg: 'rgba(56,201,122,0.06)', border: 'rgba(56,201,122,0.35)', labelColor: '#38C97A', glow: 'rgba(56,201,122,0.04)' },
-  { id: 'syntax', label: 'SyntaxTide', sub: 'VS Code Extension', icon: '🧩', x: 690, y: 175, w: 160, h: 60, size: 30, isCore: false, bg: 'rgba(155,109,255,0.06)', border: 'rgba(155,109,255,0.35)', labelColor: '#9B6DFF', glow: 'rgba(155,109,255,0.04)' },
-  { id: 'wiki', label: 'WikiTide', sub: 'Auto-Gen Docs', icon: '📖', x: 130, y: 330, w: 140, h: 50, size: 24, isCore: false, bg: 'rgba(255,255,255,0.02)', border: 'rgba(255,255,255,0.12)', labelColor: '#7E8BB0', glow: 'rgba(255,255,255,0.02)' },
-  { id: 'agent', label: 'AgenTide', sub: 'AI Coding Agents', icon: '🤖', x: 690, y: 330, w: 150, h: 50, size: 24, isCore: false, bg: 'rgba(155,109,255,0.06)', border: 'rgba(155,109,255,0.28)', labelColor: '#9B6DFF', glow: 'rgba(155,109,255,0.03)' },
+  { id: 'init', label: 'InitTide', sub: 'Template Bootstrap', icon: '🚀', x: 130, y: 175, w: 160, h: 60, size: 30, isCore: false, bg: 'rgba(91,117,217,0.10)', border: 'rgba(91,117,217,0.40)', labelColor: '#5B75D9', glow: 'rgba(91,117,217,0.08)' },
+  { id: 'share', label: 'ShareTide', sub: 'TLP:CLEAR Community', icon: '🤝', x: center.x, y: 290, w: 170, h: 60, size: 30, isCore: false, bg: 'rgba(56,201,122,0.10)', border: 'rgba(56,201,122,0.40)', labelColor: '#38C97A', glow: 'rgba(56,201,122,0.08)' },
+  { id: 'syntax', label: 'SyntaxTide', sub: 'VS Code Extension', icon: '🧩', x: 690, y: 175, w: 160, h: 60, size: 30, isCore: false, bg: 'rgba(155,109,255,0.10)', border: 'rgba(155,109,255,0.40)', labelColor: '#9B6DFF', glow: 'rgba(155,109,255,0.08)' },
+  { id: 'wiki', label: 'WikiTide', sub: 'Auto-Gen Docs', icon: '📖', x: 130, y: 330, w: 140, h: 50, size: 24, isCore: false, bg: 'rgba(255,255,255,0.06)', border: 'rgba(255,255,255,0.25)', labelColor: '#7E8BB0', glow: 'rgba(255,255,255,0.06)' },
+  { id: 'agent', label: 'AgenTide', sub: 'AI Coding Agents', icon: '🤖', x: 690, y: 330, w: 150, h: 50, size: 24, isCore: false, bg: 'rgba(155,109,255,0.10)', border: 'rgba(155,109,255,0.35)', labelColor: '#9B6DFF', glow: 'rgba(155,109,255,0.06)' },
 ]
 
 // Quadratic bezier arcs between CoreTide and satellites

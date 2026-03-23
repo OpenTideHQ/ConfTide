@@ -23,7 +23,7 @@
       <!-- Triangle fill -->
       <polygon
         points="180,35 55,220 305,220"
-        fill="rgba(155,109,255,0.03)"
+        fill="rgba(155,109,255,0.06)"
         :opacity="visible ? 1 : 0"
         :style="tIn(0.3)"
       />
@@ -40,26 +40,26 @@
             :style="{ transition: `stroke-dashoffset 1.2s cubic-bezier(0.23,1,0.32,1) 0.7s` }" />
 
       <!-- Center label -->
-      <text x="180" y="155" text-anchor="middle" fill="rgba(255,255,255,0.35)" font-weight="800" font-size="16" font-family="'Inter',sans-serif"
+      <text x="180" y="155" text-anchor="middle" fill="rgba(255,255,255,0.55)" font-weight="800" font-size="16" font-family="'Inter',sans-serif"
             :opacity="visible ? 1 : 0" :style="tIn(1)">TRUST</text>
 
       <!-- Top node: AI Agent -->
       <g filter="url(#tt-glow)" :opacity="visible ? 1 : 0" :style="tIn(0.4)">
-        <circle cx="180" cy="35" r="32" fill="rgba(155,109,255,0.10)" stroke="rgba(155,109,255,0.50)" stroke-width="1.8" class="node-pulse-purple" />
+        <circle cx="180" cy="35" r="32" fill="rgba(155,109,255,0.12)" stroke="rgba(155,109,255,0.50)" stroke-width="1.8" class="node-pulse-purple" />
         <text x="180" y="28" text-anchor="middle" fill="#9B6DFF" font-weight="700" font-size="8" font-family="'Inter',sans-serif">CONSTRAINED</text>
         <text x="180" y="40" text-anchor="middle" fill="#9B6DFF" font-weight="700" font-size="8" font-family="'Inter',sans-serif">AI AGENT</text>
       </g>
 
       <!-- Bottom-left: Schema -->
       <g filter="url(#tt-glow)" :opacity="visible ? 1 : 0" :style="tIn(0.6)">
-        <circle cx="55" cy="220" r="32" fill="rgba(245,197,24,0.06)" stroke="rgba(245,197,24,0.45)" stroke-width="1.8" class="node-pulse-gold" />
+        <circle cx="55" cy="220" r="32" fill="rgba(245,197,24,0.10)" stroke="rgba(245,197,24,0.50)" stroke-width="1.8" class="node-pulse-gold" />
         <text x="55" y="216" text-anchor="middle" fill="#F5C518" font-weight="700" font-size="8" font-family="'Inter',sans-serif">SCHEMA</text>
         <text x="55" y="228" text-anchor="middle" fill="#F5C518" font-weight="700" font-size="8" font-family="'Inter',sans-serif">VALIDATION</text>
       </g>
 
       <!-- Bottom-right: Human -->
       <g filter="url(#tt-glow)" :opacity="visible ? 1 : 0" :style="tIn(0.8)">
-        <circle cx="305" cy="220" r="32" fill="rgba(56,201,122,0.06)" stroke="rgba(56,201,122,0.45)" stroke-width="1.8" class="node-pulse-green" />
+        <circle cx="305" cy="220" r="32" fill="rgba(56,201,122,0.10)" stroke="rgba(56,201,122,0.50)" stroke-width="1.8" class="node-pulse-green" />
         <text x="305" y="216" text-anchor="middle" fill="#38C97A" font-weight="700" font-size="8" font-family="'Inter',sans-serif">HUMAN</text>
         <text x="305" y="228" text-anchor="middle" fill="#38C97A" font-weight="700" font-size="8" font-family="'Inter',sans-serif">REVIEW</text>
       </g>

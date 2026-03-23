@@ -1,5 +1,5 @@
 <template>
-  <div class="brand-footer">
+  <div class="brand-footer" v-if="$slidev?.nav?.currentPage > 1">
     <span class="brand-left">
       <img src="/opentide-logo.png" alt="OpenTide" class="brand-logo-img" />
       <span class="sep">·</span>

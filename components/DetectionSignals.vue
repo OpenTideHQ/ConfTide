@@ -8,7 +8,7 @@
         </filter>
         <radialGradient id="sig-center" cx="50%" cy="50%" r="50%">
           <stop offset="0%" stop-color="rgba(91,117,217,0.15)" />
-          <stop offset="100%" stop-color="rgba(91,117,217,0.02)" />
+          <stop offset="100%" stop-color="rgba(91,117,217,0.06)" />
         </radialGradient>
       </defs>
 
@@ -36,7 +36,7 @@
          :opacity="visible ? 1 : 0"
          :style="tIn(0.6 + i * 0.2)"
       >
-        <circle :cx="sig.x" :cy="sig.y" r="32" fill="rgba(245,197,24,0.06)" stroke="rgba(245,197,24,0.35)" stroke-width="1.5" :class="`signal-node signal-${i}`" />
+        <circle :cx="sig.x" :cy="sig.y" r="32" fill="rgba(245,197,24,0.10)" stroke="rgba(245,197,24,0.40)" stroke-width="1.5" :class="`signal-node signal-${i}`" />
         <text :x="sig.x" :y="sig.y - 8" text-anchor="middle" font-size="16">📡</text>
         <text :x="sig.x" :y="sig.y + 8" text-anchor="middle" fill="#F5C518" font-weight="600" font-size="9" font-family="'Inter',sans-serif">{{ sig.label }}</text>
         <text :x="sig.x" :y="sig.y + 20" text-anchor="middle" fill="#7E8BB0" font-size="7" font-family="'Inter',sans-serif">{{ sig.method }}</text>
@@ -49,7 +49,7 @@
         <rect v-for="(ds, j) in sig.sources" :key="j"
               :x="sig.x - 25 + j * 28" :y="sig.y + 36"
               width="24" height="16" rx="4"
-              fill="rgba(91,117,217,0.08)" stroke="rgba(91,117,217,0.20)" stroke-width="0.8"
+              fill="rgba(91,117,217,0.12)" stroke="rgba(91,117,217,0.30)" stroke-width="1"
         />
         <text v-for="(ds, j) in sig.sources" :key="'dst-'+j"
               :x="sig.x - 25 + j * 28 + 12" :y="sig.y + 48"

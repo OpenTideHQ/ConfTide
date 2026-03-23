@@ -88,7 +88,7 @@
 
       <!-- Deploy target box -->
       <g :opacity="visible ? 1 : 0" :style="tIn(1.2)">
-        <rect :x="W - 250" :y="layers[3].y" :width="210" :height="layers[3].h" rx="14" fill="rgba(155,109,255,0.04)" stroke="rgba(155,109,255,0.20)" stroke-width="1" />
+        <rect :x="W - 250" :y="layers[3].y" :width="210" :height="layers[3].h" rx="14" fill="rgba(155,109,255,0.08)" stroke="rgba(155,109,255,0.30)" stroke-width="1" />
         <text :x="W - 145" :y="layers[3].y + 22" text-anchor="middle" fill="#9B6DFF" font-weight="600" font-size="10" font-family="'Inter',sans-serif">DEPLOY TO</text>
         <text :x="W - 145" :y="layers[3].y + 38" text-anchor="middle" fill="#7E8BB0" font-size="9" font-family="'Inter',sans-serif">Sentinel · CrowdStrike · Splunk</text>
         <text :x="W - 145" :y="layers[3].y + 52" text-anchor="middle" fill="#7E8BB0" font-size="9" font-family="'Inter',sans-serif">SentinelOne · MDE · HarfangLab</text>
@@ -111,37 +111,37 @@ const tIn = (delay) => ({
 })
 
 const gradients = [
-  { id: 'pf-threat', from: 'rgba(224,82,101,0.14)', to: 'rgba(224,82,101,0.04)' },
-  { id: 'pf-tvm', from: 'rgba(224,82,101,0.10)', to: 'rgba(224,82,101,0.03)' },
-  { id: 'pf-dom', from: 'rgba(91,117,217,0.10)', to: 'rgba(91,117,217,0.03)' },
-  { id: 'pf-mdr', from: 'rgba(56,201,122,0.10)', to: 'rgba(56,201,122,0.03)' },
+  { id: 'pf-threat', from: 'rgba(224,82,101,0.22)', to: 'rgba(224,82,101,0.08)' },
+  { id: 'pf-tvm', from: 'rgba(224,82,101,0.18)', to: 'rgba(224,82,101,0.07)' },
+  { id: 'pf-dom', from: 'rgba(91,117,217,0.18)', to: 'rgba(91,117,217,0.07)' },
+  { id: 'pf-mdr', from: 'rgba(56,201,122,0.18)', to: 'rgba(56,201,122,0.07)' },
 ]
 
 const layers = [
   {
-    id: 'intel', y: 15, h: 60, gradId: 'pf-threat', stroke: 'rgba(224,82,101,0.20)',
+    id: 'intel', y: 15, h: 60, gradId: 'pf-threat', stroke: 'rgba(224,82,101,0.32)',
     color: '#E05265', icon: '📰', label: 'INTELLIGENCE',
     sub: 'Reports · Advisories · MISP Events · CVEs · Blog Posts',
     badges: [],
   },
   {
-    id: 'tvm', y: 110, h: 72, gradId: 'pf-tvm', stroke: 'rgba(224,82,101,0.28)',
+    id: 'tvm', y: 110, h: 72, gradId: 'pf-tvm', stroke: 'rgba(224,82,101,0.35)',
     color: '#E05265', icon: '☣️', label: 'THREAT VECTORS (TVM)',
     sub: 'Atomic TTPs · ATT&CK · Kill Chain · Surface · Terrain · Severity · Impact · Chaining',
     badges: [
-      { text: 'Schema-Validated', bg: 'rgba(245,197,24,0.08)', border: 'rgba(245,197,24,0.20)', textColor: '#F5C518' },
+      { text: 'Schema-Validated', bg: 'rgba(245,197,24,0.12)', border: 'rgba(245,197,24,0.30)', textColor: '#F5C518' },
     ],
   },
   {
-    id: 'dom', y: 225, h: 72, gradId: 'pf-dom', stroke: 'rgba(91,117,217,0.28)',
+    id: 'dom', y: 225, h: 72, gradId: 'pf-dom', stroke: 'rgba(91,117,217,0.35)',
     color: '#5B75D9', icon: '🎯', label: 'DETECTION OBJECTIVES (DOM)',
     sub: 'Signals · Methodology · Data Requirements · Composition Strategy',
     badges: [
-      { text: 'Multi-Signal', bg: 'rgba(91,117,217,0.08)', border: 'rgba(91,117,217,0.20)', textColor: '#5B75D9' },
+      { text: 'Multi-Signal', bg: 'rgba(91,117,217,0.12)', border: 'rgba(91,117,217,0.30)', textColor: '#5B75D9' },
     ],
   },
   {
-    id: 'mdr', y: 340, h: 60, gradId: 'pf-mdr', stroke: 'rgba(56,201,122,0.28)',
+    id: 'mdr', y: 340, h: 60, gradId: 'pf-mdr', stroke: 'rgba(56,201,122,0.35)',
     color: '#38C97A', icon: '🚨', label: 'DETECTION RULES (MDR)',
     sub: 'Multi-platform queries · KQL · SPL · Response procedures',
     badges: [],

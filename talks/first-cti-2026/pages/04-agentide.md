@@ -16,7 +16,7 @@ class: text-center
 
 ## The Agen<span class="text-agent">Tide</span> Hypothesis
 
-<p class="text-sm text-[var(--ot-gray-400)] mb-4">What if AI could be a <strong>Detection Engineer</strong> — not just an assistant?</p>
+<p class="text-sm text-[var(--ot-gray-400)] mb-4">What if AI could be a <strong>Detection Engineer</strong> - not just an assistant?</p>
 
 <div class="grid grid-cols-2 gap-5 mb-6">
 
@@ -25,7 +25,7 @@ class: text-center
 </div>
 
 <div class="glass-card">
-  <p class="text-sm">Not a chatbot. Not autocomplete. A <strong class="text-agent">full-cycle coding agent</strong> that models threats, designs detections, writes queries, opens PRs — with guardrails.</p>
+  <p class="text-sm">Not a chatbot. Not autocomplete. A <strong class="text-agent">full-cycle coding agent</strong> that models threats, designs detections, writes queries, opens PRs - with guardrails.</p>
 </div>
 
 </div>
@@ -117,27 +117,27 @@ layout: two-cols
 
 <div class="flex gap-2 items-start mb-2 text-sm">
   <span class="badge badge-purple min-w-5 text-center">1</span>
-  <div><strong>Correctness</strong> — Exact, cognitively correct threat decomposition</div>
+  <div><strong>Correctness</strong> - Exact, cognitively correct threat decomposition</div>
 </div>
 
 <div class="flex gap-2 items-start mb-2 text-sm">
   <span class="badge badge-purple min-w-5 text-center">2</span>
-  <div><strong>Consistency</strong> — Update existing objects before creating new ones</div>
+  <div><strong>Consistency</strong> - Update existing objects before creating new ones</div>
 </div>
 
 <div class="flex gap-2 items-start mb-2 text-sm">
   <span class="badge badge-purple min-w-5 text-center">3</span>
-  <div><strong>Transparency</strong> — All decisions rationalised and discoverable</div>
+  <div><strong>Transparency</strong> - All decisions rationalised and discoverable</div>
 </div>
 
 <div class="flex gap-2 items-start mb-2 text-sm">
   <span class="badge badge-purple min-w-5 text-center">4</span>
-  <div><strong>Critical Thinking</strong> — Agent can *disagree* with the user</div>
+  <div><strong>Critical Thinking</strong> - Agent can <em>disagree</em> with the user</div>
 </div>
 
 <div class="flex gap-2 items-start text-sm">
   <span class="badge badge-purple min-w-5 text-center">5</span>
-  <div><strong>Autonomous</strong> — End-to-end changes without hand-holding</div>
+  <div><strong>Autonomous</strong> - End-to-end changes without hand-holding</div>
 </div>
 
 </v-clicks>
@@ -158,7 +158,7 @@ layout: two-cols
     <strong class="text-threat">NEVER</strong> create folders or restructure the repo<br>
     <strong class="text-gold">ENFORCE</strong> top-down: Intel → TVM → DOM → MDR<br>
     <strong class="text-gold">ENFORCE</strong> one object type per PR/MR<br>
-    <strong class="text-rule">USE</strong> only provided intelligence — no hallucinations<br>
+    <strong class="text-rule">USE</strong> only provided intelligence - no hallucinations<br>
     <strong class="text-rule">VALIDATE</strong> all output against JSON schemas
   </div>
 </div>
@@ -190,7 +190,7 @@ layout: two-cols
 <div class="glass-card !p-3">
   <div class="flex items-center gap-2 mb-2">
     <span class="badge badge-green text-xs">Open</span>
-    <span class="text-sm font-semibold">PR #9 — Notepad++ Supply Chain Attack TVMs</span>
+    <span class="text-sm font-semibold">PR #9 - Notepad++ Supply Chain Attack TVMs</span>
   </div>
   <p class="text-xs text-[var(--ot-gray-400)] !mb-2">Author: <strong class="text-agent">Copilot coding agent</strong></p>
   <ul class="text-xs !my-0 space-y-0.5">
@@ -227,7 +227,7 @@ layout: two-cols
 
 <div class="glass-card agent">
   <h3 class="!text-sm !text-rule">Self-Correcting Behaviour</h3>
-  <p class="text-xs">In PR #4, the agent <strong>corrected its own ATT&CK mapping</strong> — changing G0118 (invalid) to G0016 (APT29). In PR #8, it fixed KQL field names and added null guards.</p>
+  <p class="text-xs">In PR #4, the agent <strong>corrected its own ATT&CK mapping</strong> - changing G0118 (invalid) to G0016 (APT29). In PR #8, it fixed KQL field names and added null guards.</p>
 </div>
 
 </v-click>
@@ -252,7 +252,7 @@ layout: two-cols
 <v-click>
 <div class="glass-card threat !py-2 !px-3 text-sm">
   <h3 class="!m-0 !text-sm !text-threat">☣️ 4 Threat Vectors Created</h3>
-  <p class="!m-0 !mt-1 text-xs text-[var(--ot-gray-400)]">NSIS side-loading, recon, exfil, C2 — fully chained</p>
+  <p class="!m-0 !mt-1 text-xs text-[var(--ot-gray-400)]">NSIS side-loading, recon, exfil, C2 - fully chained</p>
 </div>
 </v-click>
 
@@ -358,7 +358,7 @@ DeviceProcessEvents
 
 ## Multi-Source <span class="text-agent">Intelligence Processing</span>
 
-<p class="text-sm text-[var(--ot-gray-400)] mb-4">AgenTide has processed diverse intelligence formats — all producing schema-compliant objects</p>
+<p class="text-sm text-[var(--ot-gray-400)] mb-4">AgenTide has processed diverse intelligence formats - all producing schema-compliant objects</p>
 
 <div class="grid grid-cols-3 gap-5">
 
@@ -372,7 +372,7 @@ DeviceProcessEvents
 <div class="glass-card agent text-center">
   <span class="text-3xl block mb-2">📰</span>
   <h3 class="!text-agent">Blog Posts</h3>
-  <p class="text-sm">Kaspersky, Wiz Research — supply chain campaigns → full attack chain modelling with IOCs</p>
+  <p class="text-sm">Kaspersky, Wiz Research - supply chain campaigns → full attack chain modelling with IOCs</p>
   <span class="badge badge-navy text-xs mt-2 inline-block">PR #7, #9</span>
 </div>
 
@@ -388,7 +388,7 @@ DeviceProcessEvents
 <v-click>
 
 <div class="text-center mt-6">
-  <p class="text-sm">The key innovation isn't that AI generates text — it's that it does so within a <strong class="text-gold">rigorous engineering framework</strong>.</p>
+  <p class="text-sm">The key innovation isn't that AI generates text - it's that it does so within a <strong class="text-gold">rigorous engineering framework</strong>.</p>
   <p class="text-xs text-[var(--ot-gray-400)]">Version-controlled · Schema-validated · CI/CD-tested · Human-reviewed</p>
 </div>
 
@@ -406,7 +406,7 @@ layout: two-cols
 
 <div class="glass-card agent !p-3">
   <h3 class="!text-sm !text-agent !mb-1">Schema Constraints</h3>
-  <p class="text-xs !m-0">6.3MB JSON Schemas act as structured "knowledge" — the agent reads them at runtime to understand every field, enumeration, and validation rule. <strong>No hallucinated fields can pass validation.</strong></p>
+  <p class="text-xs !m-0">6.3MB JSON Schemas act as structured "knowledge" - the agent reads them at runtime to understand every field, enumeration, and validation rule. <strong>No hallucinated fields can pass validation.</strong></p>
 </div>
 
 <div class="glass-card agent !p-3">
@@ -416,7 +416,7 @@ layout: two-cols
 
 <div class="glass-card agent !p-3">
   <h3 class="!text-sm !text-agent !mb-1">Git as Safety Net</h3>
-  <p class="text-xs !m-0">Every agent output is a PR — human reviewable, CI-validated, revertible. <strong>No direct deployment without review.</strong></p>
+  <p class="text-xs !m-0">Every agent output is a PR - human reviewable, CI-validated, revertible. <strong>No direct deployment without review.</strong></p>
 </div>
 
 </div>
@@ -451,7 +451,7 @@ layout: two-cols
       <span class="text-xl">📋</span>
       <div>
         <div class="text-agent font-bold text-sm">Traceability</div>
-        <div class="text-xs text-white/60 mt-0.5">Git PR trail — every change human-reviewable and revertible</div>
+        <div class="text-xs text-white/60 mt-0.5">Git PR trail - every change human-reviewable and revertible</div>
       </div>
     </div>
   </div>

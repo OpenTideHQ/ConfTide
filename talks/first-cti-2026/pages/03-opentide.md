@@ -16,7 +16,7 @@ class: text-center
 
 ## What is <span class="text-white">Open</span><span class="text-gold">Tide</span>?
 
-> An open-source framework that **models adversary behaviours as Threat Vectors**, links them to **Detection Objectives** and supporting **Detection Rules** — enabling faster operationalisation of intelligence and finer-grained coverage understanding.
+> An open-source framework that **models adversary behaviours as Threat Vectors**, links them to **Detection Objectives** and supporting **Detection Rules** - enabling faster operationalisation of intelligence and finer-grained coverage understanding.
 
 <v-click>
 
@@ -97,7 +97,7 @@ class: text-center
     <span class="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-[rgba(224,82,101,0.15)] border border-[rgba(224,82,101,0.35)]">☣️</span>
     <h3 class="!m-0 !text-[var(--ot-threat)]">Threat Vector</h3>
   </div>
-  <p class="text-sm"><strong>TVM</strong> — Atomically modelled TTP from intelligence</p>
+  <p class="text-sm"><strong>TVM</strong> - Atomically modelled TTP from intelligence</p>
   <ul class="text-xs mt-2">
     <li>ATT&CK + Kill Chain mapping</li>
     <li>Attack surface & terrain</li>
@@ -116,7 +116,7 @@ class: text-center
     <span class="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-[rgba(91,117,217,0.15)] border border-[rgba(91,117,217,0.35)]">🎯</span>
     <h3 class="!m-0 !text-[var(--ot-detect)]">Detection Objective</h3>
   </div>
-  <p class="text-sm"><strong>DOM</strong> — What to detect and how</p>
+  <p class="text-sm"><strong>DOM</strong> - What to detect and how</p>
   <ul class="text-xs mt-2">
     <li>Links to 1+ Threat Vectors</li>
     <li><strong class="text-gold">Signals</strong>: atomic detection ideas</li>
@@ -135,7 +135,7 @@ class: text-center
     <span class="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-[rgba(56,201,122,0.15)] border border-[rgba(56,201,122,0.35)]">🚨</span>
     <h3 class="!m-0 !text-[var(--ot-rule)]">Detection Rule</h3>
   </div>
-  <p class="text-sm"><strong>MDR</strong> — Detection-as-Code for deployment</p>
+  <p class="text-sm"><strong>MDR</strong> - Detection-as-Code for deployment</p>
   <ul class="text-xs mt-2">
     <li>Multi-platform queries (KQL, SPL…)</li>
     <li>Response procedures</li>
@@ -176,7 +176,7 @@ layout: two-cols
 
 <div class="pr-4 mt-2">
 
-A TVM is an **atomically defined TTP** — richer than an ATT&CK technique, directly tied to intelligence.
+A TVM is an **atomically defined TTP** - richer than an ATT&CK technique, directly tied to intelligence.
 
 ```yaml
 name: "Notepad++ NSIS installer side-loading"
@@ -191,11 +191,7 @@ threat:
   viability: Confirmed
   terrain:
     - Notepad++ installed via trojanised source
-  actors:
-    - name: StrongPity
-  chaining:
-    - uuid: "a1b2c3d4-..."
-      relation: "atomicity::implements"
+  actors: [{name: StrongPity}]
 ```
 
 </div>
@@ -209,19 +205,19 @@ threat:
 ### Why This Matters
 
 <div class="glass-card threat mb-3">
-  <p class="text-sm !m-0">☣️ <strong class="text-gold">Atomic granularity</strong> — One TVM = one specific adversary action, not a broad technique category</p>
+  <p class="text-sm !m-0">☣️ <strong class="text-gold">Atomic granularity</strong> - One TVM = one specific adversary action, not a broad technique category</p>
 </div>
 
 <div class="glass-card threat mb-3">
-  <p class="text-sm !m-0">🔗 <strong class="text-gold">Chaining</strong> — TVMs link to each other to model attack paths & campaign structures</p>
+  <p class="text-sm !m-0">🔗 <strong class="text-gold">Chaining</strong> - TVMs link to each other to model attack paths & campaign structures</p>
 </div>
 
 <div class="glass-card threat mb-3">
-  <p class="text-sm !m-0">🌍 <strong class="text-gold">Surface + Terrain</strong> — Scoped to your environment: `OS::Windows`, `Cloud::AWS`</p>
+  <p class="text-sm !m-0">🌍 <strong class="text-gold">Surface + Terrain</strong> - Scoped to your environment: `OS::Windows`, `Cloud::AWS`</p>
 </div>
 
 <div class="glass-card threat">
-  <p class="text-sm !m-0">📊 <strong class="text-gold">Scored Risk</strong> — Severity, leverage, impact, viability — not just a technique ID</p>
+  <p class="text-sm !m-0">📊 <strong class="text-gold">Scored Risk</strong> - Severity, leverage, impact, viability - not just a technique ID</p>
 </div>
 
 </div>
@@ -236,29 +232,23 @@ layout: two-cols
 
 <div class="pr-4 mt-2">
 
-A DOM answers: *"How should we detect this threat?"* — before writing any query.
+A DOM answers: *"How should we detect this threat?"* - before writing any query.
 
 ```yaml
 name: "Detect NSIS side-loading via Notepad++"
 objective:
   type: Threat
   priority: Critical
-  threats:
-    - uuid: "tvm-uuid-here"
+  threats: ["tvm-uuid-here"]
   composition:
     strategy: "Multi-signal correlation"
   signals:
     - name: "Suspicious NSIS child process"
       methodology: Process Monitoring
-      data:
-        availability: Complete
-        logsources: [Sysmon, MDE]
-      entities: [host::hostname, process::name]
+      logsources: [Sysmon, MDE]
     - name: "Temp.sh exfiltration"
       methodology: Network Monitoring
-      data:
-        availability: Partial
-        logsources: [Proxy, DNS]
+      logsources: [Proxy, DNS]
 ```
 
 </div>
@@ -271,7 +261,7 @@ objective:
 
 ### Signals: Detection Atoms
 
-Each **Signal** is an atomic detection opportunity — the building block for rules.
+Each **Signal** is an atomic detection opportunity - the building block for rules.
 
 <div class="mt-3 space-y-2">
   <div class="glass-card detect !p-2.5 text-center">
@@ -310,7 +300,7 @@ layout: two-cols
 
 ### <span class="text-warn">Traditional: ATT&CK Navigator</span>
 
-<p class="text-xs mb-2">Binary coverage per technique — "detected" or "not detected"</p>
+<p class="text-xs mb-2">Binary coverage per technique - "detected" or "not detected"</p>
 
 <div class="glass-card">
   <div class="flex gap-1 mb-1">

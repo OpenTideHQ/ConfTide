@@ -24,7 +24,7 @@ layout: two-cols
 
 <div class="glass-card agent">
   <h3 class="!text-sm !text-agent">From AGENTS.md → Skills</h3>
-  <p class="text-xs">AGENTS.md is monolithic — one massive instruction set. <strong>Skills</strong> decompose this into modular, reusable capability packages.</p>
+  <p class="text-xs">AGENTS.md is monolithic - one massive instruction set. <strong>Skills</strong> decompose this into modular, reusable capability packages.</p>
 </div>
 
 <div class="glass-card agent">
@@ -103,7 +103,7 @@ applyTo: "Objects/Threat Vectors/**"
 <div class="glass-card text-center">
   <span class="text-3xl block mb-2">🤖</span>
   <h3>Try AgenTide</h3>
-  <p class="text-sm">Point Copilot coding agent at your OpenTide instance — <strong class="text-agent">AGENTS.md</strong> does the rest</p>
+  <p class="text-sm">Point Copilot coding agent at your OpenTide instance - <strong class="text-agent">AGENTS.md</strong> does the rest</p>
 </div>
 
 </div>

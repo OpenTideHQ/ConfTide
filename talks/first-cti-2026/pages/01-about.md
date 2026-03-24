@@ -8,7 +8,7 @@ layout: two-cols
 
 ### European Commission CSOC
 
-Cyber Security Operations Centre protecting EU institutions' digital infrastructure — one of the largest multi-tenant environments in Europe.
+Cyber Security Operations Centre protecting EU institutions' digital infrastructure - one of the largest multi-tenant environments in Europe.
 
 <div class="flex flex-wrap gap-1 mt-3">
   <span class="badge badge-gold">Detection Engineering</span>

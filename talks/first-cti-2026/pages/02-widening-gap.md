@@ -21,7 +21,7 @@ class: text-center
 <div class="glass-card threat">
   <span class="text-2xl block mb-1">📈</span>
   <h3 class="!text-[var(--ot-threat)]">Volume</h3>
-  <p class="text-sm">New CVEs, supply chain attacks, zero-days, APT campaigns — the firehose never stops.</p>
+  <p class="text-sm">New CVEs, supply chain attacks, zero-days, APT campaigns - the firehose never stops.</p>
 </div>
 
 <div class="glass-card threat">
@@ -80,7 +80,7 @@ class: text-center
 <v-click>
 
 <p class="text-center text-sm text-[var(--ot-gray-200)] mt-4">
-The gap isn't <em>knowledge</em> — it's the <strong class="text-gold">operationalisation speed</strong> from intelligence to deployed detection.
+The gap isn't <em>knowledge</em> - it's the <strong class="text-gold">operationalisation speed</strong> from intelligence to deployed detection.
 </p>
 
 </v-click>
